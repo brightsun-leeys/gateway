@@ -57,10 +57,6 @@ spring:
           uri: http://MyPage:8080
           predicates:
             - Path= /myPages/**
-        - id: MyPage
-          uri: http://MyPage:8080
-          predicates:
-            - Path= /myPages/**
       globalcors:
         corsConfigurations:
           '[/**]':
