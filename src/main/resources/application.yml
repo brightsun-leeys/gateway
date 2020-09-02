@@ -41,23 +41,23 @@ spring:
   cloud:
     gateway:
       routes:
-#        - id: ScreeningManage
-        -id : user21-screening-repo
+        - id: ScreeningManage
+#        -id : user21-screening-repo
           uri: http://ScreeningManage:8080
           predicates:
             - Path=/screenings/**
- #       - id: HospitalManage
-        - id: user21-hospital-repo
+        - id: HospitalManage
+#        - id: user21-hospital-repo
           uri: http://HospitalManage:8080
           predicates:
             - Path=/hospitals/** 
-#        - id: ReservationManage
-        - id: user21-reservation-repo        
+        - id: ReservationManage
+#        - id: user21-reservation-repo        
           uri: http://ReservationManage:8080
           predicates:
             - Path=/reservations/** 
-#        - id: MyPage
-        - id: user21-mypage-repo
+        - id: MyPage
+#        - id: user21-mypage-repo
           uri: http://MyPage:8080
           predicates:
             - Path= /myPages/**
